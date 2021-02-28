@@ -106,7 +106,7 @@ span{
 }
 .answer{
   width: 35%;
-  height: 100px;
+  min-height: 100px;
   background: #fff;
   box-shadow: 0 1px 30px #61b6fc;
   text-align: center;
@@ -167,4 +167,20 @@ span{
   z-index: 3;
   top: 0;
   left: 0;
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+  .phone{
+    width: 330px;
+    height: 635px;
+  }
+
+  .question{
+    margin: 15px 0;
+  }
+  .answer{
+    font-size: 14px;
+  }
 }
