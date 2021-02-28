@@ -171,16 +171,23 @@ span{
 
 
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 600px) {
   .phone{
-    width: 330px;
-    height: 635px;
+    width: 280px;
+    height: 530px;
+    margin-top: 10px;
   }
-
   .question{
-    margin: 15px 0;
+    margin: 10px 0;
+    font-size: 17px;
   }
-  .answer{
+  .answers{
     font-size: 14px;
+    margin-top: 10px;
+  }
+  .timer{
+    width: 110px;
+    height: 110px;
+    line-height: 110px;
   }
 }
