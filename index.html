@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Quizer</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="phone">
+        <div class="startGame animate__animated "></div>
+        <div class="content">
+          <div class="title">
+            <i class="fab fa-battle-net"></i>
+            <span>Quizer</span>
+          </div>
+          <div class="question">
+            <p>
+              Tarihin sıfır noktası olarak bilinen, insanlık tarihinin ilk somut kalıntılarının bulunduğu Göbekli tepe hangi ilimizdedir?
+            </p>
+          </div>
+          <div class="timer">
+            <div class="timerAnimation"></div>
+            <span></span>
+          </div>
+          <div class="answers">
+            <div class="answer" onclick="sayAnswer(0)">
+              <span class="option">A</span>
+              <span class="userOption">Turtle</span>
+            </div>
+            <div class="answer" onclick="sayAnswer(1)">
+              <span class="option">B</span>
+              <span class="userOption">Tielemans</span>
+            </div>
+            <div class="answer" onclick="sayAnswer(2)">
+              <span class="option">C</span>
+              <span class="userOption">Robert</span>
+            </div>
+            <div class="answer" onclick="sayAnswer(3)">
+              <span class="option">D</span>
+              <span class="userOption">Person</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
