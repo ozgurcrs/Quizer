@@ -32,7 +32,18 @@ function Start(){
 function sayAnswer(id){
     const userCorrect = answer[id].querySelector(".userOption").innerHTML;
     if(userCorrect == correctAnswer){
+      answer[id].style.border = "4px solid #3ae08d";
+      setTimeout(() => {
         time = 0;
+        answer[id].style.border = "0";
+      }, 2000);
+    }
+    else {
+      answer[id].style.border = "4px solid #e74f4f";
+      setTimeout(() => {
+        time = 0;
+        answer[id].style.border = "0";
+      }, 2000);
     }
 }
 
@@ -50,6 +61,7 @@ function startTimer() {
         askQuestion(questionCount);
         startTimer();
         timerBoxShadow.style.boxShadow = "0 1px 15px #e3d3f7"
+    
       }
     }
   }, 1000);
